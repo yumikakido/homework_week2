@@ -4,10 +4,48 @@ html {
 
 body {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   color: #333;
 }
 
 img {
   max-width: 100%;
 }
+
+/* header
+---------------------------------------------------- */
+#header {
+  background-color: #e6f3ff;
+  box-shadow: 0 5px 5px 4px #cce6ff;
+  font-size: 10px;
+  padding: 20px;
+  align-items: center;
+  display: flex;
+}
+
+.header-name {
+  display: inline-block;
+  margin-right: auto;
+  font-size: 20px;
+}
+
+#header ul {
+  display: flex;
+  padding: 10px 0;
+}
+
+#header li {
+  font-size: 0.9rem;
+  margin-left: 30px;
+  list-style: none;
+}
+#header li a {
+  color: #24292e;
+  text-decoration: none;
+}
+#header li a:hover {
+  opacity: 0.7;
+}
+
+
+

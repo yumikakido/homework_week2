@@ -89,10 +89,12 @@ li {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #f1f1f1;
   width: 100%; 
+  height: 80px;
 }
 
 .mainPic h2 {
-  padding-left: 20px;
+  padding-left: 40px;
+  padding-top: 40px;
 }
 
 /* aboutMe
@@ -120,12 +122,11 @@ li {
 
 .profile p {
   line-height: 1.8;
-  padding-bottom: 10px;
+  padding-top: 20px;
 }
 
 /* work
 ---------------------------------------------------- */
-
 .workSection .title{
   margin-bottom: 30px;
 }
@@ -145,8 +146,6 @@ li {
 }
 
 .work-img img:hover {
-  -ms-transform: scale(1.12); /* IE 9 */
-  -webkit-transform: scale(1.12); /* Safari 3-8 */
   transform: scale(1.12); 
   cursor: pointer;
 }

@@ -30,7 +30,8 @@ li {
 
 .title {
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 60px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -47,8 +48,12 @@ li {
   box-shadow: 0 5px 5px 4px var(--var(--lightblue));
   font-size: 10px;
   padding: 20px;
+  top: 0;
   align-items: center;
   display: flex;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
 }
 
 .header-name {
@@ -65,7 +70,7 @@ li {
 }
 
 #header li {
-  font-size: 0.9rem;
+  font-size: 17px;
   margin-left: 30px;
   text-decoration: underline;
 }
@@ -81,6 +86,10 @@ li {
   margin-top: 2px;
 }
 
+.mainPic img {
+  max-width: 100%;
+}
+
 .mainPic .picContent {
   position: absolute; 
   bottom: 0;
@@ -89,28 +98,22 @@ li {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #f1f1f1;
   width: 100%; 
-  height: 80px;
 }
 
 .mainPic h2 {
-  padding-left: 40px;
-  padding-top: 40px;
+  padding: 20px;
 }
 
-/* aboutMe
+/* about
 ---------------------------------------------------- */
 .aboutSection {
   background-color: #f2f2f2;
 }
+
 .profile {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;  
-}
-
-.profile-img {
-  width: 20%;
-  margin-right: 10px;
-  border-radius: 50%;
 }
 
 .profile-img img {
@@ -119,10 +122,9 @@ li {
   border-radius: 50%;
  
 }
-
 .profile p {
   line-height: 1.8;
-  padding-top: 20px;
+  margin: 20px;
 }
 
 /* work
@@ -130,6 +132,7 @@ li {
 .workSection .title{
   margin-bottom: 30px;
 }
+
 .workList {
   display: flex;
   justify-content: space-between;
@@ -139,6 +142,7 @@ li {
 .work-img {
   text-align: center;
 }
+
 .work-img img {
   width: 600px;
   height: 400px;
@@ -175,7 +179,7 @@ li {
 }
 
 
-/* contacrtMe
+/* contact
 ---------------------------------------------------- */
 .contactSection {
   background-color: #f2f2f2;
@@ -206,3 +210,167 @@ li {
   font-size: 10px;
   text-align: center;
 }
+
+/* media query
+---------------------------------------------------- */
+@media screen and (max-width: 425px) {
+    .title {
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+    
+    .container {
+      padding: 15px;
+      text-align: center;
+    }
+
+    body {
+      font-size: 11px;
+    }
+
+    /* header */
+    #header {
+      padding: 8px;
+    }
+
+    .header-name {
+      font-size: 12px;
+      margin-left: 1px;
+    }
+
+    #header li {
+      font-size: 10px;
+      margin-left: 5px;
+    }
+
+    /* mainPic */
+    .mainPic {
+      margin-top: 45px;
+    }
+
+    .mainPic img {
+      height: 170px;
+    }  
+
+    .mainPic h2 {
+      padding: 9px;
+    }
+
+    /* about */
+    .profile-img img {
+      width: 100px;
+      height: 100px;
+    }
+
+    .profile p {
+      margin: 10px;
+    }
+    
+    /* work */
+    .workSection .title{
+      margin-bottom: 15px;
+    }
+
+    .work-img img {
+      width: 380px;
+      height: 280px;
+      border:1px solid #303030;
+    }
+
+    .work-img2 img {
+      width: 320px;
+      height: 220px;
+      border:1px solid #303030;
+    }
+
+    .workList {
+      margin: 0 40px;
+    }
+
+    .workName {
+      font-size: 12px;
+      margin-top: 10px;
+    }
+    
+    .workInfo {
+      font-size: 10px;
+      margin-bottom: 15px;
+    }
+
+    /* footer */
+    #footer {
+      padding: 15px;
+  }
+
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .title {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .container {
+    text-align: center;
+    padding: 15px;
+  }
+
+  body {
+    font-size: 15px;
+  }
+
+  /* header */
+  .header-name {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+
+  #header li {
+    font-size: 13px;
+    margin-left: 5px;
+  }
+
+  /* mainPic */
+  .mainPic {
+    margin-top: 45px;
+  }
+
+  .mainPic img {
+    height: 260px;
+  }  
+
+  .mainPic h2 {
+    padding: 13px;
+  }
+
+   /* about */
+   .profile-img img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile p {
+    margin: 15px;
+  }
+
+  /* work */
+  .work-img2 {
+    flex: 0 0 48%;
+    max-width: 50%;
+}
+  /* contact */
+  .contactList ul{
+    font-size: 13px;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  .work-img2 {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+}
+
+  
+

@@ -107,7 +107,7 @@ li {
 /* about
 ---------------------------------------------------- */
 .aboutSection {
-  background-color: #f2f2f2;
+  background-color: #e6e6e6;
 }
 
 .profile {
@@ -178,11 +178,28 @@ li {
   opacity: 0.7;
 }
 
+/* resume
+---------------------------------------------------- */
+.resumeSection {
+  background-color: #f2f2f2;
+}
+
+.resumeSection .title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.resumeSection.container {
+  padding-bottom: 5px;
+}
+
+.resumeSection p {
+  text-align: center;
+}
 
 /* contact
 ---------------------------------------------------- */
 .contactSection {
-  background-color: #f2f2f2;
+  background-color: #e6e6e6;
 }
 
 .contactList ul{
